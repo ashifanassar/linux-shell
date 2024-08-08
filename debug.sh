@@ -2,10 +2,13 @@
 
 #debug script with bash -x scriptname.sh
 
-read -p "Enter your number" a
 
-if (($a % 2 == 0) ) ; then
-    echo "Number is odd"
+
+echo "Enter a number:"
+read num
+
+if (( $num % 2 == 0 )); then
+  echo "The number $num is even."
 else
-    echo "number is even"
-fi
+  echo "The number $num is odd."
+fi 1    
